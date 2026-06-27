@@ -86,34 +86,8 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               <X size={20} />
             </button>
 
-            {/* LEFT: PHOTO */}
-            <div className="w-full lg:w-[60%] xl:w-[65%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
-              {photo.url ? (
-                <img src={photo.url} alt={photo.title} className="w-full h-full object-contain" />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center text-white/50 border border-white/10 m-4 rounded-xl bg-white/5">
-                   <span className="text-4xl opacity-50 mb-4">📷</span>
-                   <span className="text-xs uppercase tracking-widest">{photo.category} placeholder</span>
-                </div>
-              )}
-              
-              {/* Navigation Arrows */}
-              <button 
-                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex > 0 ? photoIndex - 1 : gallery.length - 1); }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button 
-                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex < gallery.length - 1 ? photoIndex + 1 : 0); }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
-              >
-                <ChevronRight size={24} />
-              </button>
-            </div>
-
-            {/* RIGHT: INFO & COMMENTS */}
-            <div className="w-full lg:w-[40%] xl:w-[35%] h-[60vh] lg:h-full bg-white flex flex-col overflow-hidden relative">
+            {/* LEFT: INFO & COMMENTS */}
+            <div className="w-full lg:w-[55%] xl:w-[60%] h-[60vh] lg:h-full bg-white flex flex-col overflow-hidden relative">
               <button 
                 onClick={onClose}
                 className="hidden lg:flex absolute top-6 right-6 p-2 rounded-full text-caption hover:bg-black/5 transition-colors z-20"
@@ -196,6 +170,32 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                   </div>
                 </div>
               </form>
+            </div>
+
+            {/* RIGHT: PHOTO */}
+            <div className="w-full lg:w-[45%] xl:w-[40%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
+              {photo.url ? (
+                <img src={photo.url} alt={photo.title} className="w-full h-full object-contain" />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center text-white/50 border border-white/10 m-4 rounded-xl bg-white/5">
+                   <span className="text-4xl opacity-50 mb-4">📷</span>
+                   <span className="text-xs uppercase tracking-widest">{photo.category} placeholder</span>
+                </div>
+              )}
+              
+              {/* Navigation Arrows */}
+              <button 
+                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex > 0 ? photoIndex - 1 : gallery.length - 1); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button 
+                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex < gallery.length - 1 ? photoIndex + 1 : 0); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
+              >
+                <ChevronRight size={24} />
+              </button>
             </div>
           </motion.div>
         </div>
