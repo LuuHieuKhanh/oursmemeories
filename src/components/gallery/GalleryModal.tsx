@@ -147,17 +147,13 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                     </div>
                   ) : (
                     photo.comments.map((comment) => (
-                      <div key={comment.id} className="bg-[#FAF7F2] p-4 rounded-[16px] border border-black/5 shadow-sm">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="w-8 h-8 rounded-full bg-white border border-divider flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
-                             <span className="text-[10px] uppercase font-bold text-primary">{comment.author.charAt(0)}</span>
-                          </div>
-                          <div className="flex flex-col">
-                             <span className="font-bold text-primary text-sm">{comment.author}</span>
-                             <span className="text-[10px] text-caption font-medium">{comment.date}</span>
-                          </div>
+                      <div key={comment.id} className="bg-[#FAF7F2] px-4 py-3 rounded-[12px] border border-black/5 shadow-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                           <span className="font-bold text-primary text-xs">{comment.author}</span>
+                           <span className="text-[10px] text-caption font-medium">•</span>
+                           <span className="text-[10px] text-caption font-medium">{comment.date}</span>
                         </div>
-                        <p className="text-secondary text-sm leading-relaxed">{comment.text}</p>
+                        <p className="text-secondary text-sm leading-snug">{comment.text}</p>
                       </div>
                     ))
                   )}
