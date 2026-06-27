@@ -76,7 +76,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 10 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-[1400px] h-full md:h-[90vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
+            className="relative w-full max-w-[1400px] h-full md:h-[95vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
           >
             {/* Close Button Mobile */}
             <button 
@@ -86,7 +86,33 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               <X size={20} />
             </button>
 
-            {/* LEFT: INFO & COMMENTS */}
+            {/* LEFT: PHOTO */}
+            <div className="w-full lg:w-[45%] xl:w-[40%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
+              {photo.url ? (
+                <img src={photo.url} alt={photo.title} className="w-full h-full object-contain" />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center text-white/50 border border-white/10 m-4 rounded-xl bg-white/5">
+                   <span className="text-4xl opacity-50 mb-4">📷</span>
+                   <span className="text-xs uppercase tracking-widest">{photo.category} placeholder</span>
+                </div>
+              )}
+              
+              {/* Navigation Arrows */}
+              <button 
+                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex > 0 ? photoIndex - 1 : gallery.length - 1); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button 
+                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex < gallery.length - 1 ? photoIndex + 1 : 0); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
+
+            {/* RIGHT: INFO & COMMENTS */}
             <div className="w-full lg:w-[55%] xl:w-[60%] h-[60vh] lg:h-full bg-white flex flex-col overflow-hidden relative">
               <button 
                 onClick={onClose}
@@ -97,12 +123,12 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
 
               <div className="flex-1 overflow-y-auto scrollbar-hide p-6 lg:p-10 pt-8 lg:pt-12">
                 {/* Header Info */}
-                <div className="mb-10 pb-8 border-b border-divider">
-                  <div className="inline-block px-3 py-1 rounded-full bg-background-secondary text-[10px] uppercase tracking-widest text-caption font-medium mb-4">
+                <div className="mb-6 pb-6 border-b border-divider">
+                  <div className="inline-block px-3 py-1 rounded-full bg-background-secondary text-[10px] uppercase tracking-widest text-caption font-medium mb-3">
                     {photo.category}
                   </div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4 leading-tight">{photo.title}</h3>
-                  <p className="text-secondary/90 leading-relaxed mb-6">{photo.description}</p>
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-3 leading-tight">{photo.title}</h3>
+                  <p className="text-secondary/90 leading-relaxed mb-4">{photo.description}</p>
                   <div className="flex items-center gap-2 text-xs text-caption">
                     <span>Uploaded by <strong>{photo.uploader}</strong></span>
                     <span>•</span>
@@ -111,18 +137,18 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                 </div>
 
                 {/* Comments List */}
-                <div className="flex flex-col gap-6 mb-8">
-                  <h4 className="font-heading text-xs uppercase tracking-widest text-primary font-medium">Memories ({photo.comments.length})</h4>
+                <div className="flex flex-col gap-4 mb-4">
+                  <h4 className="font-heading text-xs uppercase tracking-widest text-primary font-medium">Comments ({photo.comments.length})</h4>
                   
                   {photo.comments.length === 0 ? (
-                    <div className="py-12 flex flex-col items-center justify-center text-caption italic border border-dashed border-divider rounded-[16px]">
+                    <div className="py-8 flex flex-col items-center justify-center text-caption italic border border-dashed border-divider rounded-[16px]">
                       <span className="text-2xl mb-2 opacity-50">✍️</span>
-                      <span className="text-sm">No memories shared yet.</span>
+                      <span className="text-sm">No comments yet.</span>
                     </div>
                   ) : (
                     photo.comments.map((comment) => (
-                      <div key={comment.id} className="bg-[#FAF7F2] p-5 rounded-[16px] border border-black/5 shadow-sm">
-                        <div className="flex items-center gap-3 mb-3">
+                      <div key={comment.id} className="bg-[#FAF7F2] p-4 rounded-[16px] border border-black/5 shadow-sm">
+                        <div className="flex items-center gap-3 mb-2">
                           <div className="w-8 h-8 rounded-full bg-white border border-divider flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
                              <span className="text-[10px] uppercase font-bold text-primary">{comment.author.charAt(0)}</span>
                           </div>
@@ -157,7 +183,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                       type="text" 
                       value={commentText}
                       onChange={(e) => setCommentText(e.target.value)}
-                      placeholder="Write a memory..."
+                      placeholder="Write a comment..."
                       className="w-full bg-background-secondary border border-divider rounded-full pl-5 pr-12 py-3.5 text-sm focus:outline-none focus:border-black/20 transition-colors"
                     />
                     <button 
@@ -170,32 +196,6 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                   </div>
                 </div>
               </form>
-            </div>
-
-            {/* RIGHT: PHOTO */}
-            <div className="w-full lg:w-[45%] xl:w-[40%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
-              {photo.url ? (
-                <img src={photo.url} alt={photo.title} className="w-full h-full object-contain" />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center text-white/50 border border-white/10 m-4 rounded-xl bg-white/5">
-                   <span className="text-4xl opacity-50 mb-4">📷</span>
-                   <span className="text-xs uppercase tracking-widest">{photo.category} placeholder</span>
-                </div>
-              )}
-              
-              {/* Navigation Arrows */}
-              <button 
-                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex > 0 ? photoIndex - 1 : gallery.length - 1); }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button 
-                onClick={(e) => { e.stopPropagation(); onNavigate(photoIndex !== null && photoIndex < gallery.length - 1 ? photoIndex + 1 : 0); }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors opacity-0 group-hover:opacity-100 backdrop-blur-md"
-              >
-                <ChevronRight size={24} />
-              </button>
             </div>
           </motion.div>
         </div>
