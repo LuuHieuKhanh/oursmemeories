@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Heirloom - KTX 2022-2026</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Inter:wght@400;600&amp;family=Outfit:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary-container": "#e2dfdd",
+                        "on-primary-fixed-variant": "#474744",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e5e2e1",
+                        "tertiary-container": "#ffffe4",
+                        "tertiary-fixed": "#e4e4ca",
+                        "secondary-fixed-dim": "#c8c6c4",
+                        "secondary-fixed": "#e5e2e0",
+                        "outline": "#767872",
+                        "background": "#fcf8f7",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-tint": "#5e5e5c",
+                        "surface-container-low": "#f7f3f2",
+                        "primary-fixed": "#e4e2de",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "primary-fixed-dim": "#c8c6c3",
+                        "tertiary-fixed-dim": "#c8c8af",
+                        "on-tertiary-fixed-variant": "#474835",
+                        "on-primary-container": "#757572",
+                        "surface-bright": "#fcf8f7",
+                        "surface-dim": "#ddd9d8",
+                        "secondary": "#5f5e5d",
+                        "outline-variant": "#c6c7c0",
+                        "surface": "#fcf8f7",
+                        "on-surface-variant": "#454742",
+                        "on-surface": "#1c1b1b",
+                        "primary-container": "#fffdf9",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#c8c6c3",
+                        "surface-container-high": "#ebe7e6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#5e5e5c",
+                        "surface-container": "#f1edec",
+                        "on-secondary-container": "#636261",
+                        "on-primary-fixed": "#1b1c1a",
+                        "tertiary": "#5e604b",
+                        "on-background": "#1c1b1b",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#757661",
+                        "on-secondary-fixed": "#1c1c1b",
+                        "on-secondary-fixed-variant": "#474745",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1d0d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit-1": "8px",
+                        "unit-8": "64px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "unit-3": "24px",
+                        "unit-2": "16px",
+                        "unit-6": "48px",
+                        "unit-4": "32px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Outfit"],
+                        "headline-sm": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Outfit"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-md": ["Inter"],
+                        "handwritten": ["Caveat"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "caption": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    },
+                    "animation": {
+                        "float-slow": "float 12s ease-in-out infinite",
+                        "float-med": "float 9s ease-in-out infinite",
+                        "float-fast": "float 7s ease-in-out infinite",
+                        "drift": "drift 4s ease-in-out infinite alternate",
+                        "fly": "fly 20s linear infinite",
+                        "scroll-line": "scrollLine 2s cubic-bezier(0.77, 0, 0.175, 1) infinite"
+                    },
+                    "keyframes": {
+                        "float": {
+                            "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+                            "50%": { transform: "translateY(-20px) rotate(2deg)" }
+                        },
+                        "drift": {
+                            "0%": { transform: "translateX(-2px)" },
+                            "100%": { transform: "translateX(2px)" }
+                        },
+                        "fly": {
+                            "0%": { transform: "translate(-10vw, 20vh) rotate(15deg) scale(0.5)", opacity: "0" },
+                            "10%": { opacity: "1" },
+                            "90%": { opacity: "1" },
+                            "100%": { transform: "translate(110vw, -10vh) rotate(15deg) scale(0.5)", opacity: "0" }
+                        },
+                        "scrollLine": {
+                            "0%": { transform: "scaleY(0)", transformOrigin: "top" },
+                            "50%": { transform: "scaleY(1)", transformOrigin: "top" },
+                            "50.1%": { transform: "scaleY(1)", transformOrigin: "bottom" },
+                            "100%": { transform: "scaleY(0)", transformOrigin: "bottom" }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .bg-glass {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .text-shadow-light {
+                text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-hidden select-none">
+<!-- Hero Section Canvas -->
+<main class="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat opacity-90" data-alt="A soft, ethereal sky background blending warm off-white into pastel baby blue. Wispy, realistic clouds float gently across the frame. Tiny, subtle sparkling dust motes catch the light, adding a magical, nostalgic texture to the high-key, airy composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCczIzC_gmmzYJ-MfdTcyU9JArlmZOqghzDn3vDpR_LwGmeXnnVs5sbHeVB6Jtv4a-P0iuBi7QjBQLA0yXXYeozyhsKJw9uHHYzpRu9belQbfU_dlO38QgT_qAr4amjObCapDbA72ksK_oBvnp3grYKlrAHpcZckKcQFTwGGArhP_CdcjolsH4XrxVHBwWF4xgHNEmHg1a3OBlkBR7PmhHBxSy1Wz9XlTFIUcBeRmxFZPdkCJvqoIC1_D4_ctce_ojOx2uPja9UCHo')"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-60"></div>
+</div>
+<!-- Flying Elements (Paper Airplane) -->
+<div class="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+<div class="absolute w-32 h-32 animate-fly origin-center" style="top: 30%; left: -10%;">
+<div class="w-full h-full bg-contain bg-center bg-no-repeat scale-150" data-alt="A set of delicate, hand-drawn pastel doodles including stars, hearts, flowers, and a paper airplane, rendered on a transparent background to resemble marginalia in a scrapbook." style="clip-path: circle(20% at 25% 65%);"></div>
+</div>
+</div>
+<!-- Interactive Layer: Rope & Balloons -->
+<div class="absolute top-[15%] w-full flex justify-center z-20 pointer-events-none">
+<!-- The Rope -->
+<div class="relative w-[80%] max-w-[1400px] h-32 flex justify-center">
+<!-- Balloon Cluster (Flex container matching rope curve roughly) -->
+<div class="absolute inset-0 flex justify-between items-start px-[5%] pt-8 w-full h-[500px]">
+<!-- Balloon 1: Alex -->
+<div class="relative flex flex-col items-center animate-float-slow mt-12" style="animation-delay: 0s;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-white shadow-sm overflow-hidden bg-white relative z-10"><img class="w-full h-full object-cover" data-alt="A candid, warm, sunlit portrait of a young male student named Alex, smiling gently. He is wearing casual stylish clothes, captured in an airy outdoor setting typical of a high-end graduation photobook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5U4xqkxdK9FJ2l4D-wQ839ZOpQcpUBW80Fhnpt2qnU1X05WfJqFG-UfLqvpc9w-ciPUck3Hmhy7nRbbjXdy0VLHuGVfeAcTlfOXe-Frzp4he50Ck0GSpNHJBULTYymWmMsts7pkMCpdCHDWBEJKKdzdqH5xR718PfGG-EhWltXOSfqaHYhe2Lk3oWKRq_HAzPKbHUz3JysSVndDj8AFjTL4AI_76KyFXOe64AomaKB2A-tuySVElqvBU3zsIv0SXh_7sVQTb4eG8"/></div>
+<div class="absolute -bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-1 animate-drift">
+<span class="font-handwritten text-2xl text-[#8E9B90] rotate-[-5deg]">Alex</span>
+<div class="w-6 h-6 bg-contain bg-center bg-no-repeat" data-alt="A set of delicate, hand-drawn pastel doodles including stars, hearts, flowers, and a paper airplane, rendered on a transparent background to resemble marginalia in a scrapbook." style="clip-path: circle(20% at 75% 25%);"></div>
+</div>
+</div>
+<!-- Balloon 2: Sam -->
+<div class="relative flex flex-col items-center animate-float-fast mt-24 md:mt-32 scale-110" style="animation-delay: 2s;">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border-[3px] border-white shadow-sm overflow-hidden bg-white relative z-10"><img class="w-full h-full object-cover" data-alt="A joyful, laughing portrait of a young student named Sam with short hair. Bright natural light casts soft shadows on their face. The aesthetic is clean, modern, and editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtIwYsC28CNwbv8gDIHiisb0wO7fKzrFsZ_mAk_XyBBB4WH7pwSQBLuXMjAgQoHphGduRw9El4PCo6V8DiowymgyzZNgBxn18ArrwHf7IwNuV5K1Jszw3f2m2mXmZUchpBML5KSVQNmY-UooPAPn2hGcB23YGFKvNJDXK2BVCKz2I14JGP_xbmiZ8oBPD_er43MkGj3i1ZQef6D8sakKxh3dPFevHaD_CSo2TXck9EXfPSyd1R7lbZTdDL0h1mjoB5ccD2aaEcmiY"/></div>
+<div class="absolute -bottom-6 left-full -translate-x-4 flex items-center gap-1 animate-drift" style="animation-delay: 1s;">
+<span class="font-handwritten text-3xl text-[#AFA2C1] rotate-[8deg]">Sam</span>
+</div>
+</div>
+<!-- Balloon 3: Jordan -->
+<div class="relative flex flex-col items-center animate-float-med mt-8 md:mt-12 scale-90" style="animation-delay: 4s;">
+<div class="w-20 h-20 md:w-28 md:h-28 rounded-full border-2 border-white shadow-sm overflow-hidden bg-white relative z-10"><img class="w-full h-full object-cover" data-alt="An introspective, artistic portrait of a female student named Jordan. Soft, diffused lighting highlights her features. The background is a soft blur, typical of premium portrait photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZRBpzIFZ-7zx80_4JTzjIF84hEJPaxdHfV-j5EhxzVh4SGzaBIEQAY8pW6xnFHP7dLpj4V7SISjYiLnWXjG6fE8F42OmRwRBI8zsoPywhMIAPFrxRQfXJy8eTvSNVVbwzox6WM1f8wkwy88PxGP3Kv0Sv8BHzmx76OQpO4RCD8RvPq7KPJnuY4Wg-zwSm5altce-A_JXvqW08JWnCOfIOvds2o9LVIf50vypFCKz3qGk9cyGrq8CDQgjOzw45V8S0qDF7VP-vDo"/></div>
+<div class="absolute -bottom-10 right-full translate-x-4 flex items-center gap-1 animate-drift" style="animation-delay: 0.5s;">
+<div class="w-5 h-5 bg-contain bg-center bg-no-repeat" data-alt="A set of delicate, hand-drawn pastel doodles including stars, hearts, flowers, and a paper airplane, rendered on a transparent background to resemble marginalia in a scrapbook." style="clip-path: circle(20% at 45% 85%);"></div>
+<span class="font-handwritten text-2xl text-[#E8AE9C] rotate-[-2deg]">Jordan</span>
+</div>
+</div>
+<!-- Balloon 4: Taylor -->
+<div class="relative flex flex-col items-center animate-float-fast mt-32 md:mt-40 scale-105" style="animation-delay: 1.5s;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-white shadow-sm overflow-hidden bg-white relative z-10"><img class="w-full h-full object-cover" data-alt="A bright, energetic portrait of a male student named Taylor with glasses, smiling confidently towards the camera. The setting suggests a sunlit campus, maintaining a clean, high-end editorial feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhGoOMgOkFsTJMjtKukZEYSoGyPHBHQIWziegDw-EJw-O2jtMRJSO1wt8Wo5oozVUHI5WkTT92Uh7RqcEVcCsAe888eyJX9U1EnAtpTTOU5JIVfU4-eARch0lEUJcsV718dKe4pIBQbFeKyRtCKxwO_PtJ2PPrkLWLIPkotwuar8d6a0feNd8-S4YMcD3Rx4e2apsRWp5Joy9knYuYEebyaAcfzXVHXwCiW6x6G9lOGBWD-2_vu7EcFvjqJZ6lxuy5umL5ksXJjvQ"/></div>
+<div class="absolute -bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-drift" style="animation-delay: 2s;">
+<span class="font-handwritten text-3xl text-[#92AEC4] rotate-[5deg]">Taylor</span>
+</div>
+</div>
+<!-- Balloon 5: Casey -->
+<div class="relative flex flex-col items-center animate-float-slow mt-16 scale-95" style="animation-delay: 3s;">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-white shadow-sm overflow-hidden bg-white relative z-10"><img class="w-full h-full object-cover" data-alt="A serene, elegant portrait of a female student named Casey with long hair gently blowing in the wind. The lighting is golden hour soft, contributing to a warm, nostalgic digital heirloom aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqbIYRgtqxMVBHnFLpPTv_6zLEr1SEytO6trtMKxiLxF6xXeHQ1CBm_HiMihS2E_f2lmZFPSr_dvMLIUKXhsELeKqkoHov-T0yQOp0AC6yx-reTAnI0Y5iMuc44ojhqXITBMMooiZe4ZlTOfodQwb7I21kKlkOpIrQ7UmWQr1Yhwg0xLRDzOiSqioIO1U6s_Uw0T44UT4xukYszPy625qdZm6Jv8s5okXR9uwHLgscv0XAEHwPvph7GK9boF8S-FREBJgH_gH3K4"/></div>
+<div class="absolute -bottom-8 right-1/2 translate-x-4 flex items-center gap-1 animate-drift" style="animation-delay: 1.2s;">
+<span class="font-handwritten text-2xl text-[#C4B792] rotate-[-8deg]">Casey</span>
+<div class="w-6 h-6 bg-contain bg-center bg-no-repeat" data-alt="A set of delicate, hand-drawn pastel doodles including stars, hearts, flowers, and a paper airplane, rendered on a transparent background to resemble marginalia in a scrapbook." style="clip-path: circle(20% at 20% 40%);"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Typography Layer -->
+<div class="relative z-30 mt-auto mb-[15vh] flex flex-col items-center text-center px-4">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight text-shadow-light mb-4">
+                KTX 2022 — 2026
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto opacity-80">
+                Five friends. Four unforgettable years. One story worth remembering.
+            </p>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest opacity-60">Scroll to begin</span>
+<div class="w-[1px] h-12 bg-surface-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-primary animate-scroll-line origin-top"></div>
+</div>
+</div>
+</main>
+</body></html>

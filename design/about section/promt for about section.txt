@@ -1,0 +1,358 @@
+Design ONLY the "Meet The Five" section for a premium digital graduation memory website.
+
+Do NOT design the Hero or other sections.
+
+This section introduces the five main characters before the story continues.
+
+The concept is inspired by university student ID cards.
+
+The atmosphere should feel elegant, warm, interactive and nostalgic.
+
+==================================================
+STYLE
+==================================================
+
+Use the existing Design System.
+
+Style references:
+
+• Premium editorial
+• Korean graduation photobook
+• Apple Human Interface spacing
+• Soft scrapbook aesthetic
+
+Avoid:
+
+• Dashboard UI
+• Social media cards
+• Material Design
+• Heavy shadows
+• Neon colors
+• Corporate feeling
+
+==================================================
+BACKGROUND
+==================================================
+
+Background color:
+
+Warm White (#FFFDF9)
+
+Very subtle paper texture.
+
+Small hand-drawn doodles in the corners.
+
+Examples:
+
+tiny stars
+
+paper airplanes
+
+sparkles
+
+small flowers
+
+Everything should remain subtle.
+
+==================================================
+SECTION HEADER
+==================================================
+
+Large title:
+
+Meet The Five
+
+Subtitle:
+
+Five different personalities.
+One unforgettable journey.
+
+Center aligned.
+
+Large whitespace above and below.
+
+==================================================
+MAIN LAYOUT
+==================================================
+
+The entire section focuses on five student ID cards.
+
+There should be NO text below the cards except a small instruction.
+
+The cards are arranged horizontally.
+
+The cards overlap each other slightly.
+
+Each card overlaps around 20–25%.
+
+The center card is slightly higher than the others.
+
+The composition should resemble someone placing five student ID cards on a desk.
+
+Do NOT align them perfectly.
+
+Give each card a tiny rotation between -3° and +3°.
+
+The layout should feel natural.
+
+==================================================
+CARD DESIGN
+==================================================
+
+Each card is inspired by a real university student ID card.
+
+Rounded corners (24px).
+
+White plastic material.
+
+Soft shadow.
+
+Small punched hole at the top center.
+
+A pastel colored strip at the bottom.
+
+Each person has a different accent color.
+
+Example:
+
+Baby Blue
+
+Peach
+
+Mint
+
+Lavender
+
+Butter
+
+Each card only displays:
+
+Portrait photo
+
+Person's name
+
+Nothing else.
+
+Do NOT show faculty.
+
+Do NOT show nickname.
+
+Do NOT show course.
+
+Keep the front of the card extremely clean.
+
+==================================================
+HOVER INTERACTION
+==================================================
+
+When hovering over a card:
+
+The selected card lifts upward around 16px.
+
+Scale to 1.05.
+
+Shadow becomes slightly stronger.
+
+The card rotates back to 0°.
+
+Neighboring cards move slightly sideways to create space.
+
+The hovered card always appears above all other cards.
+
+Transition:
+
+350ms ease.
+
+The interaction should feel similar to selecting cards in a card game.
+
+==================================================
+CLICK INTERACTION
+==================================================
+
+Clicking a card opens a large centered modal.
+
+Background becomes softly blurred.
+
+The modal fades in.
+
+Scale animation from 0.95 to 1.
+
+==================================================
+MODAL DESIGN
+==================================================
+
+The modal itself should look like an enlarged premium student ID card.
+
+Maximum width around 900px.
+
+Rounded corners (32px).
+
+Soft shadow.
+
+White background.
+
+Subtle paper texture.
+
+==================================================
+MODAL LAYOUT
+==================================================
+
+Split into two columns.
+
+LEFT COLUMN
+
+Large portrait photo.
+
+Student ID design.
+
+Pastel accent strip at the bottom.
+
+Small decorative university stamp.
+
+Small text:
+
+MEMORIES COLLECTION
+
+2022–2026
+
+RIGHT COLUMN
+
+Large handwritten name.
+
+Faculty
+
+Course
+
+Academic Year
+
+Example:
+
+Faculty of Information Technology
+
+K65 (2022–2026)
+
+Large spacing.
+
+==================================================
+HALL OF FAME
+==================================================
+
+Below the personal information,
+
+display a section titled:
+
+Hall of Fame
+
+This contains the nicknames given by the other four friends.
+
+Each nickname appears inside a rounded pastel tag.
+
+Each tag displays:
+
+Nickname
+
+Small text underneath:
+
+— Given by Long
+
+Example:
+
+Captain
+
+— Given by Long
+
+Google sống
+
+— Given by Huy
+
+Deadline King
+
+— Given by Nam
+
+Never use trophy icons.
+
+Keep everything elegant.
+
+==================================================
+FUN FACTS
+==================================================
+
+Below Hall of Fame.
+
+Display 3–5 fun facts.
+
+Each item uses a simple outline icon.
+
+Examples:
+
+☕ Coffee Lover
+
+🎮 Arena of Valor Main
+
+🍜 Midnight Noodles
+
+📸 Always Taking Photos
+
+Keep this area playful but minimal.
+
+==================================================
+ANIMATIONS
+==================================================
+
+Hover:
+
+Card lifts.
+
+Neighbors move.
+
+Click:
+
+Background blur.
+
+Modal fades.
+
+Photo appears.
+
+Information slides upward.
+
+Nickname tags appear one by one.
+
+Fun facts fade in.
+
+Close:
+
+Everything reverses smoothly.
+
+==================================================
+RESPONSIVE
+==================================================
+
+Desktop:
+
+Five overlapping cards in one row.
+
+Tablet:
+
+Three cards on top.
+
+Two cards below.
+
+Mobile:
+
+Horizontal swipe carousel.
+
+Cards remain overlapping slightly.
+
+==================================================
+EMOTIONAL GOAL
+==================================================
+
+Users should feel like they are picking up and reading a real student ID card from university.
+
+The interaction should feel personal.
+
+Before seeing any memories,
+
+users should first get to know the five friends.
+
+The section should encourage curiosity and emotional connection before continuing the story.

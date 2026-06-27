@@ -1,0 +1,286 @@
+Design ONLY the "Letters" section for a premium digital graduation memory website.
+
+Do NOT design any other sections.
+
+This section represents five heartfelt letters written by five university friends after graduating.
+
+Each person writes ONE letter addressed to the entire group.
+
+The section should feel emotional, personal and quiet.
+
+Users should feel like opening a box of handwritten letters after many years.
+
+==================================================
+STYLE
+==================================================
+
+Follow the established Design System.
+
+Visual inspiration:
+
+• Premium editorial magazine
+• Handmade scrapbook
+• Vintage stationery
+• Korean graduation photobook
+• Luxury paper goods
+
+Avoid:
+
+• Email UI
+• Chat UI
+• Blog layout
+• Timeline
+• Dashboard
+• Social media appearance
+
+==================================================
+BACKGROUND
+==================================================
+
+Background:
+
+Warm White (#FFFDF9)
+
+Very subtle paper texture.
+
+A few tiny dried flower illustrations.
+
+Very light notebook paper marks.
+
+Soft sunlight effect in one corner.
+
+Everything should feel calm.
+
+==================================================
+SECTION HEADER
+==================================================
+
+Centered.
+
+Large title:
+
+Letters
+
+Subtitle:
+
+Some words are easier to write
+than to say.
+
+Large spacing.
+
+==================================================
+MAIN LAYOUT
+==================================================
+
+Display five envelopes.
+
+Do NOT display the letters directly.
+
+The envelopes are arranged naturally,
+as if someone placed them on a wooden table.
+
+They should not form a perfect grid.
+
+Some rotate by 2–3 degrees.
+
+Some overlap slightly.
+
+Keep generous spacing.
+
+==================================================
+ENVELOPE DESIGN
+==================================================
+
+Each envelope should feel realistic.
+
+Cream colored paper.
+
+Rounded edges.
+
+Subtle paper texture.
+
+Wax seal.
+
+Small handwritten recipient label.
+
+Tiny dried flower decoration.
+
+Each envelope displays only:
+
+Portrait thumbnail
+
+Friend's name
+
+Nothing else.
+
+==================================================
+HOVER
+==================================================
+
+Hovering an envelope:
+
+Lift slightly.
+
+Shadow becomes stronger.
+
+Wax seal shines subtly.
+
+Envelope opens a few millimeters.
+
+The top flap lifts slightly,
+revealing a corner of the letter inside.
+
+Animation should be slow and elegant.
+
+==================================================
+CLICK
+==================================================
+
+Clicking an envelope opens
+a centered reading modal.
+
+Background softly blurs.
+
+Modal fades in.
+
+==================================================
+LETTER MODAL
+==================================================
+
+The modal should look like
+a real sheet of premium writing paper.
+
+Rounded corners.
+
+Soft shadow.
+
+Large margins.
+
+Paper texture.
+
+A folded-paper appearance.
+
+Maximum width:
+
+800px.
+
+==================================================
+LETTER HEADER
+==================================================
+
+Top left:
+
+Portrait
+
+Friend's name
+
+Top right:
+
+Writing date
+
+Example:
+
+June 2026
+
+==================================================
+LETTER CONTENT
+==================================================
+
+The letter occupies most of the modal.
+
+Use a comfortable reading width.
+
+Large line spacing.
+
+Do NOT justify text.
+
+Keep paragraphs short.
+
+Allow handwriting-inspired decorative drop caps
+for the first letter of the first paragraph.
+
+==================================================
+ENDING
+==================================================
+
+At the bottom of the letter:
+
+A handwritten signature.
+
+Example:
+
+— Khánh
+
+Under the signature:
+
+A tiny heart doodle
+or paper airplane.
+
+==================================================
+LETTER NAVIGATION
+==================================================
+
+At the bottom of the modal,
+provide navigation:
+
+← Previous Letter
+
+Next Letter →
+
+Users should be able to read all five letters
+without closing the modal.
+
+==================================================
+ANIMATION
+==================================================
+
+Envelope hover:
+
+Lift
+
+Paper flap opens slightly
+
+Click:
+
+Envelope fades
+
+Modal scales in
+
+Letter content fades line by line
+
+Signature appears last
+
+Close:
+
+Reverse animation
+
+==================================================
+RESPONSIVE
+==================================================
+
+Desktop:
+
+Five envelopes arranged freely.
+
+Tablet:
+
+Two rows.
+
+Mobile:
+
+Horizontal swipe cards.
+
+==================================================
+EMOTIONAL GOAL
+==================================================
+
+Users should feel they are reading
+private graduation letters that were carefully
+kept for many years.
+
+The interface should disappear.
+
+Only the words should remain.
+
+This section should become
+the emotional heart of the entire website.

@@ -1,0 +1,238 @@
+Design ONLY the "Graduation Wall" section for a premium digital graduation memory website.
+
+Do NOT design any other section.
+
+This section celebrates the graduation of five university friends.
+
+Each person graduated on a different day.
+
+Do NOT create a timeline.
+
+Do NOT imply that everyone graduated together.
+
+The design should feel elegant, clean and proud.
+
+Think of it as a premium graduation exhibition wall.
+
+==================================================
+STYLE
+==================================================
+
+Follow the established Design System.
+
+Visual references:
+
+• Apple editorial layout
+• Premium graduation photobook
+• Museum exhibition
+• Minimal gallery
+
+Avoid:
+
+• Timeline
+• Masonry gallery
+• Scrapbook style
+• Social media feed
+• Dashboard
+• Heavy decorations
+
+This section should feel calmer and more mature than previous sections.
+
+==================================================
+BACKGROUND
+==================================================
+
+Background:
+
+Warm White (#FFFDF9)
+
+Very subtle paper texture.
+
+A few soft golden sunlight highlights.
+
+No colorful decorations.
+
+No doodles.
+
+Let the graduation photos become the focus.
+
+==================================================
+SECTION HEADER
+==================================================
+
+Centered.
+
+Large title:
+
+Graduation Wall
+
+Subtitle:
+
+Different days.
+
+The same destination.
+
+Large whitespace.
+
+==================================================
+MAIN LAYOUT
+==================================================
+
+Display five graduation portraits.
+
+Arrange them horizontally.
+
+Each portrait should have generous spacing.
+
+Do NOT overlap the photos.
+
+Each photo should feel equally important.
+
+The layout should resemble an art gallery exhibition.
+
+==================================================
+PHOTO CARD
+==================================================
+
+Each graduation photo is displayed inside
+a premium white frame.
+
+Rounded corners (24px).
+
+Soft shadow.
+
+Wide white border around the image.
+
+The frame resembles a luxury printed photograph.
+
+Below each photo:
+
+Student name
+
+Graduation date
+
+Example:
+
+Khánh
+
+June 28, 2026
+
+Typography should remain clean and minimal.
+
+==================================================
+PHOTO INTERACTION
+==================================================
+
+Hover:
+
+Photo lifts slightly.
+
+Scale to 1.03.
+
+Shadow increases softly.
+
+Background behind the selected photo
+becomes subtly brighter.
+
+==================================================
+CLICK
+==================================================
+
+Clicking a photo opens
+a fullscreen photo viewer.
+
+The photo becomes much larger.
+
+Display:
+
+Large graduation portrait
+
+Student name
+
+Graduation date
+
+Optional caption
+
+Example:
+
+"The end of one journey.
+The beginning of another."
+
+Provide Previous / Next navigation.
+
+==================================================
+BACKGROUND DECORATION
+==================================================
+
+Behind the photos,
+
+add extremely subtle abstract shapes.
+
+Examples:
+
+soft circles
+
+light paper cut shapes
+
+very faint graduation cap outlines
+
+Keep opacity below 5%.
+
+The background should never distract
+from the portraits.
+
+==================================================
+ANIMATIONS
+==================================================
+
+Section enters using fade-up.
+
+Photos appear one after another.
+
+Hover:
+
+Lift
+
+Scale
+
+Shadow
+
+Click:
+
+Photo expands smoothly.
+
+Backdrop fades in.
+
+==================================================
+RESPONSIVE
+==================================================
+
+Desktop:
+
+Five photos in one row.
+
+Tablet:
+
+Three photos on first row.
+
+Two photos on second row.
+
+Mobile:
+
+Horizontal swipe gallery.
+
+Large cards.
+
+==================================================
+EMOTIONAL GOAL
+==================================================
+
+This section should make visitors feel proud.
+
+Every graduation portrait should feel like
+a milestone worth celebrating.
+
+Although the graduation dates are different,
+the design should communicate that
+all five friends successfully reached
+the same destination.

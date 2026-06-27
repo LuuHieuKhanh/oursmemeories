@@ -1,0 +1,432 @@
+# Digital Graduation Album
+
+## Product Requirement Document (Developer Version)
+
+---
+
+# 1. Project Overview
+
+## Project Name
+
+Digital Graduation Album
+
+## Purpose
+
+Xây dựng một website kỷ niệm 4 năm đại học của nhóm 5 người bạn ở cùng ký túc xá.
+
+Website không phải mạng xã hội, không phải portfolio và cũng không phải blog.
+
+Đây là một cuốn album kỷ yếu số, nơi cả nhóm có thể cùng lưu giữ ảnh, viết thư cho nhau và xem lại những kỷ niệm sau nhiều năm.
+
+Website hướng tới trải nghiệm cảm xúc và storytelling thay vì tập trung vào tính năng.
+
+---
+
+# 2. Target Users
+
+Có tổng cộng 5 người sử dụng.
+
+Không có tài khoản đăng ký.
+
+Không có hệ thống phân quyền phức tạp.
+
+Bất kỳ ai truy cập đều có thể xem toàn bộ website.
+
+Một số chức năng (upload ảnh, viết thư...) sẽ được bảo vệ bằng Secret Key hoặc Admin Mode.
+
+---
+
+# 3. Product Goal
+
+Website cần tạo cảm giác như đang mở một cuốn album tốt nghiệp cao cấp.
+
+Người dùng sẽ trải nghiệm website theo thứ tự từ trên xuống dưới.
+
+Storytelling phải được giữ xuyên suốt.
+
+Không thiết kế theo dạng Dashboard hay Social Media.
+
+---
+
+# 4. User Journey
+
+Hero
+
+↓
+
+Meet The Five
+
+↓
+
+Letters
+
+↓
+
+Graduation Wall
+
+↓
+
+Memory Gallery
+
+↓
+
+Ending
+
+---
+
+# 5. Design Language
+
+Phong cách thiết kế:
+
+* Premium Editorial
+* Scrapbook hiện đại
+* Korean Graduation Photobook
+* Apple-style spacing
+* Pastel Minimalism
+
+Tone cảm xúc:
+
+* Ấm áp
+* Hoài niệm
+* Thanh xuân
+* Nhẹ nhàng
+* Tinh tế
+
+---
+
+# 6. Functional Modules
+
+## Module 1 - Hero
+
+### Mục đích
+
+Trang mở đầu của album.
+
+Giới thiệu website.
+
+### Thành phần
+
+* Tiêu đề website
+* Năm học
+* Subtitle
+* 5 avatar nổi
+* Scroll indicator
+
+### Yêu cầu
+
+Không có navigation bar.
+
+Không có button.
+
+Chỉ đóng vai trò mở đầu câu chuyện.
+
+---
+
+## Module 2 - Meet The Five
+
+### Mục đích
+
+Giới thiệu 5 nhân vật chính.
+
+### Giao diện
+
+Hiển thị 5 Student ID Card.
+
+Các card xếp ngang, chồng lên nhau khoảng 20%.
+
+Hover:
+
+* Card được chọn nổi lên.
+* Card khác tự dịch sang hai bên.
+* Card được đưa lên trên cùng.
+
+Click:
+
+Mở popup.
+
+### Popup
+
+Thông tin hiển thị:
+
+* Ảnh
+* Họ tên
+* Khoa
+* Khóa học
+* Hall of Fame
+* Fun Facts
+
+### Hall of Fame
+
+Mỗi người nhận đúng 4 biệt danh.
+
+Mỗi biệt danh gồm:
+
+* Nội dung
+* Người đặt
+
+Ví dụ:
+
+Captain
+
+— Given by Long
+
+Business Rule:
+
+Một người chỉ được đặt 1 biệt danh cho mỗi người khác.
+
+Không được sửa sau khi lưu.
+
+---
+
+## Module 3 - Letters
+
+### Mục đích
+
+Lưu những lời nhắn cuối cùng gửi tới cả nhóm.
+
+### Giao diện
+
+Hiển thị 5 phong bì.
+
+Click mở thư.
+
+### Nội dung thư
+
+* Tiêu đề
+* Người viết
+* Ngày viết
+* Nội dung
+
+Business Rule:
+
+* Mỗi người chỉ được viết 1 lá thư.
+* Không thể sửa trước khi khóa website.
+* Sau khi website public, thư chỉ đọc.
+* Có thể có nút + nếu có người chưa viết thư (có thể chọn thân phận khi viết thư)
+
+---
+
+## Module 4 - Graduation Wall
+
+### Mục đích
+
+Lưu ảnh tốt nghiệp của từng người.
+
+### Giao diện
+
+Hiển thị 5 ảnh.
+
+Thông tin:
+
+* Ảnh
+* Họ tên
+* Ngày tốt nghiệp
+
+Business Rule
+
+Mỗi người chỉ có 1 ảnh tốt nghiệp.
+
+Có thể thay đổi trước khi khóa website.
+
+Mỗi người được up ảnh 1 lần, nhập tên và ngành và ngày lễ tốt nghiệp vào 
+
+---
+
+## Module 5 - Memory Gallery
+
+### Mục đích
+
+Kho lưu trữ toàn bộ ảnh trong 4 năm.
+
+### Giao diện
+
+Gallery dạng Masonry.
+
+Không theo timeline.
+
+Có thể có hàng trăm ảnh.
+
+### Upload
+
+Ai cũng có thể upload.
+
+Thông tin ảnh:
+
+* Title
+* Description
+* Image
+
+Không bắt buộc description.
+
+### Popup
+
+Click ảnh mở modal.
+
+Hiển thị:
+
+* Ảnh lớn
+* Title
+* Description
+* Comment
+
+---
+
+## Comment
+
+Mỗi comment gồm
+
+* Người bình luận
+* Nội dung
+
+Không có account.
+
+Người dùng phải chọn tên trước khi comment.
+
+Dropdown:
+
+* Khánh
+* Nuyên
+* Ngân
+* Linh
+* Châu
+
+Business Rule:
+
+Một người chỉ được comment 1 lần trên mỗi ảnh.
+
+Không thể sửa comment của mình.
+
+Không được xóa comment người khác.
+
+---
+
+## Module 6 - Ending
+
+### Mục đích
+
+Khép lại website.
+
+### Thành phần
+
+* Một ảnh nhóm
+* Một đoạn quote
+* Footer
+
+Không có chức năng.
+
+---
+
+# 7. Data Structure
+
+## Person
+
+* id
+* name
+* faculty
+* course
+* avatar
+* graduation_photo
+* graduation_date
+* fun_fact[]
+
+---
+
+## Nickname
+
+* id
+* giver
+* receiver
+* nickname
+
+---
+
+## Letter
+
+* id
+* author
+* title
+* content
+* created_at
+
+---
+
+## Gallery Image
+
+* id
+* title
+* description
+* image
+* year
+* uploaded_at
+
+---
+
+## Comment
+
+* id
+* image_id
+* author
+* content
+* created_at
+
+---
+
+# 8. Business Rules
+
+* Có đúng 5 thành viên.
+* Không thêm hoặc xóa thành viên.
+* Mỗi người có đúng 1 profile.
+* Mỗi người có đúng 1 thư.
+* Mỗi người có đúng 1 ảnh tốt nghiệp.
+* Một người chỉ comment 1 lần trên mỗi ảnh.
+* Một người chỉ đặt 1 biệt danh cho mỗi người khác.
+* Không có đăng ký tài khoản.
+* Không có đăng nhập.
+* Không có like.
+* Không có share.
+* Không có thông báo.
+
+---
+
+# 9. Non-functional Requirements
+
+* Responsive Desktop / Tablet / Mobile.
+* Lazy loading cho Gallery.
+* Animation mượt 60 FPS.
+* Hỗ trợ ảnh dung lượng lớn.
+* Tối ưu Lighthouse > 90.
+* SEO cơ bản.
+* Tải trang nhanh.
+* Giao diện nhất quán với Design System.
+
+---
+
+# 10. Future Scope
+
+Các tính năng có thể bổ sung trong tương lai:
+
+* Chế độ chỉ đọc (Static Mode) để triển khai trên GitHub Pages sau khi hoàn thiện dữ liệu.
+
+---
+
+# 11. Tech Stack (Proposed)
+
+Frontend:
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+Backend:
+
+* Supabase (giai đoạn nhập dữ liệu)
+
+Deployment:
+
+* Vercel
+
+Archive Mode:
+
+* Export thành website tĩnh và deploy lên GitHub Pages sau khi hoàn tất toàn bộ nội dung để lưu trữ lâu dài.

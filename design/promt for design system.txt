@@ -1,0 +1,502 @@
+# Design System Specification
+
+## Premium Digital Graduation Album
+
+Design a premium digital graduation album for five university friends.
+
+The website is designed to preserve memories, not to function as a social network.
+
+The design language should feel timeless so that it still looks beautiful after 10 years.
+
+The overall atmosphere should resemble:
+
+• Premium editorial magazine
+• Korean graduation photobook
+• Handmade scrapbook
+• Apple Human Interface spacing
+• MUJI minimalism
+
+Avoid anything that looks like:
+
+• Dashboard
+• Material Design
+• Facebook
+• Instagram
+• Pinterest
+• Notion
+• Gaming website
+• Neon UI
+• Heavy Glassmorphism
+• Heavy Gradients
+• Corporate Landing Page
+
+---
+
+# DESIGN PRINCIPLE
+
+Every page should feel like a page inside a printed graduation album.
+
+Users should forget they are browsing a website.
+
+Instead,
+
+they should feel they are slowly turning pages of memories.
+
+Images are always the visual focus.
+
+The interface exists only to support the memories.
+
+---
+
+# COLOR SYSTEM
+
+Use the pastel palette below as the primary design language.
+
+Do not use saturated colors.
+
+Do not use pure black.
+
+Do not use pure white.
+
+Everything should remain soft and comfortable.
+
+Primary Background
+
+Warm White
+#FFFDF9
+
+Secondary Background
+
+#FAF7F2
+
+Alternate Background
+
+#F8FBFF
+
+Card Background
+
+#FFFFFF
+
+---
+
+Text Colors
+
+Primary
+
+#2D2D2D
+
+Secondary
+
+#6E6E6E
+
+Caption
+
+#9A9A9A
+
+Divider
+
+#ECECEC
+
+---
+
+Pastel Accent Palette
+
+Baby Blue
+
+Sky Blue
+
+Mint
+
+Seafoam
+
+Lavender
+
+Lilac
+
+Butter
+
+Yellow
+
+Pink
+
+Rose
+
+Peach
+
+Coral
+
+Each section should only use ONE dominant accent color.
+
+Never mix many pastel colors inside the same section.
+
+---
+
+SECTION COLORS
+
+Hero
+
+Baby Blue
+
+Sky Blue
+
+Letters
+
+Lavender
+
+Lilac
+
+Graduation
+
+Butter
+
+Yellow
+
+Hall of Fame
+
+Mint
+
+Seafoam
+
+Gallery
+
+Warm White
+
+Peach
+
+Coral
+
+Ending
+
+Warm White
+
+Baby Blue
+
+---
+
+TYPOGRAPHY
+
+Use modern geometric typography.
+
+Headings
+
+Outfit
+
+or
+
+Plus Jakarta Sans
+
+Weight
+
+700
+
+Body
+
+Inter
+
+Weight
+
+400
+
+---
+
+Typography Scale
+
+Hero Title
+
+64-80px
+
+Section Title
+
+44-52px
+
+Card Title
+
+22px
+
+Body
+
+16-18px
+
+Caption
+
+14px
+
+---
+
+Spacing System
+
+Use 8pt Grid.
+
+Spacing Units
+
+8
+
+16
+
+24
+
+32
+
+48
+
+64
+
+96
+
+128
+
+Every section should breathe.
+
+Never crowd the content.
+
+---
+
+Corner Radius
+
+Buttons
+
+999px
+
+Cards
+
+24px
+
+Images
+
+20px
+
+Modal
+
+32px
+
+Sticky Notes
+
+16px
+
+---
+
+Shadow System
+
+Use only one shadow style.
+
+Very soft.
+
+Large blur.
+
+Low opacity.
+
+The UI should never look heavy.
+
+---
+
+BUTTON STYLE
+
+Primary Button
+
+Rounded pill
+
+Pastel filled background
+
+Dark text
+
+Hover
+
+Lift upward by 4px
+
+Shadow becomes slightly stronger
+
+Transition
+
+300ms ease
+
+---
+
+Secondary Button
+
+White
+
+Soft border
+
+Pastel hover
+
+---
+
+CARDS
+
+Cards should resemble printed photo paper.
+
+White.
+
+Rounded.
+
+Soft shadow.
+
+Never use dark cards.
+
+---
+
+PHOTO STYLE
+
+Photos should always be the strongest visual element.
+
+Use
+
+Polaroid frames
+
+Instant film frames
+
+Rounded rectangle frames
+
+Paper borders
+
+Never crop faces aggressively.
+
+---
+
+SCRAPBOOK ELEMENTS
+
+Throughout the website use
+
+Masking tape
+
+Paper clips
+
+Sticky notes
+
+Notebook paper
+
+Tiny stars
+
+Sparkles
+
+Paper airplanes
+
+Small flowers
+
+Handwritten arrows
+
+Doodles
+
+Important:
+
+Decorations should never overpower the photographs.
+
+---
+
+ICON STYLE
+
+Rounded.
+
+Outline icons.
+
+Minimal.
+
+Friendly.
+
+---
+
+ILLUSTRATION STYLE
+
+Very limited.
+
+Soft.
+
+Hand-drawn.
+
+Never cartoon.
+
+---
+
+ANIMATION
+
+Animation should feel alive,
+
+not playful.
+
+Use
+
+Fade
+
+Float
+
+Slide
+
+Scale
+
+Small rotation
+
+Animation duration
+
+400-700ms
+
+Floating elements
+
+8-12 seconds loop
+
+Never bounce.
+
+Never shake.
+
+---
+
+SCROLL EXPERIENCE
+
+One long storytelling page.
+
+Each section almost fills one screen.
+
+Large transitions.
+
+Images appear using fade-up.
+
+Text appears slightly later.
+
+This creates cinematic storytelling.
+
+---
+
+GRID
+
+Desktop
+
+12-column grid
+
+Large margins
+
+1440px max width
+
+Content width
+
+1200px
+
+Reading width
+
+700px
+
+---
+
+RESPONSIVE
+
+Desktop First.
+
+Tablet.
+
+Mobile.
+
+Maintain generous whitespace.
+
+Never reduce spacing too much.
+
+---
+
+EMOTIONAL GOAL
+
+Every visitor should feel
+
+"I miss those days."
+
+rather than
+
+"This is a beautiful website."
+
+The memories should always be more important than the interface.

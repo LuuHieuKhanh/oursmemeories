@@ -1,0 +1,447 @@
+Design ONLY the Hero section of a premium digital graduation memory website.
+
+Do NOT design the rest of the page.
+
+The Hero should occupy exactly one full viewport (100vh).
+
+The Hero is the cover page of a digital graduation album.
+
+Users should immediately feel:
+"This isn't a website."
+"This is the first page of our memory album."
+
+====================================================
+DESIGN LANGUAGE
+====================================================
+
+Use the Design System exactly.
+
+Overall style:
+
+Premium Editorial Scrapbook
+
+Korean Graduation Yearbook
+
+Modern Minimalism
+
+Apple-level spacing
+
+Do NOT make it look childish.
+
+Do NOT make it look like a birthday invitation.
+
+Do NOT use cartoon balloons.
+
+Everything should remain elegant.
+
+====================================================
+COLOR PALETTE
+====================================================
+
+Main Background
+
+Warm White
+#FFFDF9
+
+Upper 40% of the screen
+
+A very soft gradient
+
+Warm White
+
+↓
+
+Baby Blue
+
+↓
+
+Sky Blue
+
+The transition must be almost invisible.
+
+The background should include
+
+very soft white clouds
+
+subtle paper texture
+
+tiny floating sparkles
+
+The atmosphere should resemble
+a peaceful spring afternoon.
+
+====================================================
+LAYOUT
+====================================================
+
+There is NO navigation bar.
+
+No logo.
+
+No menu.
+
+No buttons.
+
+The Hero should rely entirely on composition.
+
+Everything should be vertically centered.
+
+The composition consists of three layers:
+
+Layer 1
+
+Sky background
+
+Layer 2
+
+The rope and balloons
+
+Layer 3
+
+Title and subtitle
+
+====================================================
+THE ROPE
+====================================================
+
+Place one natural cotton rope
+
+stretching horizontally
+
+across around 70% of the page width.
+
+The rope should NOT be perfectly straight.
+
+It has a natural curve.
+
+The rope should look real.
+
+Not illustrated.
+
+Not cartoon.
+
+====================================================
+BALLOONS
+====================================================
+
+Five transparent balloons
+
+hang from the rope.
+
+Each balloon hangs independently.
+
+Every balloon has
+
+slightly different height
+
+slightly different size
+
+slightly different rotation
+
+The arrangement should feel natural.
+
+The balloons should form an organic composition.
+
+NOT perfectly aligned.
+
+====================================================
+BALLOON MATERIAL
+====================================================
+
+Transparent glass balloon.
+
+Soft reflection.
+
+Very subtle highlight.
+
+Tiny shadow.
+
+No saturated colors.
+
+No rainbow reflections.
+
+Minimal.
+
+Elegant.
+
+====================================================
+INSIDE EACH BALLOON
+====================================================
+
+Inside every balloon
+
+place one circular portrait.
+
+The portrait fills around 80% of the balloon.
+
+Leave transparent margin.
+
+Portrait border
+
+Thin white border.
+
+Very soft shadow.
+
+====================================================
+BALLOON STRINGS
+====================================================
+
+Each balloon string
+
+is thin
+
+slightly curved
+
+different length
+
+The balloons should gently float.
+
+====================================================
+FLOATING NAMES
+====================================================
+
+Each person's name
+
+floats around their balloon.
+
+Do NOT place names underneath.
+
+Instead,
+
+allow them to drift naturally.
+
+Every name has a different handwritten position.
+
+Some are left.
+
+Some right.
+
+Some slightly above.
+
+====================================================
+NAME STYLE
+====================================================
+
+Use handwritten typography.
+
+Examples
+
+Caveat
+
+Kalam
+
+Patrick Hand
+
+Each name uses one pastel accent.
+
+Example
+
+Baby Blue
+
+Mint
+
+Lavender
+
+Pink
+
+Peach
+
+Never use bold.
+
+Never use uppercase.
+
+====================================================
+DOODLES
+====================================================
+
+Around each name
+
+draw tiny doodles.
+
+Possible doodles
+
+little stars
+
+sparkles
+
+paper airplane
+
+tiny heart
+
+small flower
+
+smiley face
+
+The doodles should be extremely subtle.
+
+Almost like someone drew them with a pen.
+
+====================================================
+TITLE
+====================================================
+
+Below the balloons
+
+place the title.
+
+Typography
+
+Very large.
+
+Clean.
+
+Modern.
+
+Center aligned.
+
+Example
+
+KTX
+
+2022 — 2026
+
+The title should become the visual anchor.
+
+====================================================
+SUBTITLE
+====================================================
+
+Below the title
+
+display
+
+Five friends.
+
+Four unforgettable years.
+
+One story worth remembering.
+
+Typography
+
+Small
+
+Gray
+
+Comfortable spacing
+
+====================================================
+SCROLL INDICATOR
+====================================================
+
+Bottom center.
+
+Simple.
+
+Thin.
+
+Minimal.
+
+Animated.
+
+Below
+
+Scroll to begin
+
+using tiny typography.
+
+====================================================
+DECORATIVE ELEMENTS
+====================================================
+
+Allow several paper airplanes
+
+to slowly fly across the sky.
+
+Very slow.
+
+Some tiny clouds
+
+move slightly.
+
+Sparkles occasionally fade in and out.
+
+Everything should move slowly.
+
+Nothing should distract users.
+
+====================================================
+ANIMATIONS
+====================================================
+
+Background clouds
+
+20 second loop.
+
+Balloons
+
+Float up and down
+
+about 8px.
+
+Different timing.
+
+Different phase.
+
+Names
+
+Tiny floating motion
+
+2px only.
+
+Paper airplanes
+
+Slow horizontal movement.
+
+Everything should feel peaceful.
+
+====================================================
+RESPONSIVE
+====================================================
+
+Desktop
+
+Five balloons in one row.
+
+Tablet
+
+Three balloons
+
+Second row two balloons.
+
+Mobile
+
+Single vertical composition.
+
+The rope becomes invisible.
+
+The balloons float naturally.
+
+Maintain generous spacing.
+
+====================================================
+EMOTIONAL GOAL
+====================================================
+
+Users should smile before even scrolling.
+
+The Hero should immediately communicate
+
+friendship
+
+warmth
+
+hope
+
+youth
+
+and nostalgia.
+
+Avoid making it feel like a corporate landing page.
+
+Avoid making it feel like a portfolio.
+
+Avoid making it feel like a photo gallery.
+
+Instead,
+
+it should feel like opening the first page of a graduation memory album.

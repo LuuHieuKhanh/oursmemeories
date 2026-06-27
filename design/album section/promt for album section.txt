@@ -1,0 +1,374 @@
+Design ONLY the "Memory Gallery" section for a premium digital graduation memory website.
+
+Do NOT design any other section.
+
+This is the largest section of the website.
+
+The gallery contains memories collected over four university years.
+
+Unlike previous sections, this section is image-focused.
+
+Visitors should feel like browsing through a beautifully curated digital photo album.
+
+==================================================
+STYLE
+==================================================
+
+Follow the established Design System.
+
+Visual references:
+
+• Apple Photos
+• Pinterest Editorial
+• VSCO Gallery
+• Premium Photography Portfolio
+• Korean Graduation Photobook
+
+Avoid:
+
+• Instagram clone
+• Facebook feed
+• Social media appearance
+• Dashboard
+• Masonry with uneven gaps
+• Bright colorful UI
+
+The photographs should always remain the visual focus.
+
+==================================================
+BACKGROUND
+==================================================
+
+Warm White (#FFFDF9)
+
+No decorative illustrations.
+
+No doodles.
+
+No scrapbook elements.
+
+The gallery should feel clean.
+
+Allow the photographs to speak.
+
+==================================================
+SECTION HEADER
+==================================================
+
+Centered.
+
+Large title:
+
+Memory Gallery
+
+Subtitle:
+
+Every ordinary moment
+became an unforgettable memory.
+
+Large whitespace.
+
+==================================================
+LAYOUT
+==================================================
+
+Create a clean masonry gallery.
+
+Different image sizes.
+
+Different aspect ratios.
+
+Perfect spacing.
+
+16–24px gaps.
+
+Images should naturally create rhythm.
+
+Do NOT crop photos excessively.
+
+Keep original composition whenever possible.
+
+Maximum content width:
+
+1400px.
+
+==================================================
+PHOTO CARD
+==================================================
+
+Each photo has:
+
+Rounded corners (20px)
+
+Soft shadow
+
+White background
+
+No border
+
+No visible caption by default.
+
+==================================================
+HOVER
+==================================================
+
+Hovering a photo:
+
+Scale to 1.02.
+
+Shadow increases slightly.
+
+Image brightness increases by 5%.
+
+A small icon appears
+at the bottom-right:
+
+Expand
+
+The interaction should feel elegant.
+
+==================================================
+CLICK
+==================================================
+
+Clicking a photo opens
+a premium fullscreen modal.
+
+Background fades to soft black
+with slight blur.
+
+The modal should resemble
+Apple Photos rather than Instagram.
+
+==================================================
+PHOTO MODAL
+==================================================
+
+Maximum width:
+
+1400px.
+
+Split into two columns.
+
+LEFT (70%)
+
+Large photo.
+
+Maintain original aspect ratio.
+
+Do not crop.
+
+Allow zoom.
+
+RIGHT (30%)
+
+Scrollable information panel.
+
+White background.
+
+Large padding.
+
+Rounded corners.
+
+==================================================
+PHOTO INFORMATION
+==================================================
+
+Top:
+
+Photo title
+
+Small description
+
+Upload date
+
+Uploader name
+
+Typography remains minimal.
+
+==================================================
+COMMENTS
+==================================================
+
+Below the description,
+
+display comments.
+
+Each friend can comment only once.
+
+Every comment displays:
+
+Avatar
+
+Name
+
+Comment
+
+Timestamp
+
+Comments appear inside soft rounded paper cards.
+
+Spacing between comments:
+
+24px.
+
+Do NOT make comments look like
+Instagram or Facebook.
+
+Instead,
+
+they should resemble handwritten memory notes.
+
+==================================================
+COMMENT INPUT
+==================================================
+
+At the bottom,
+
+display:
+
+Choose your name
+
+Dropdown:
+
+Khánh
+
+Nam
+
+Long
+
+Huy
+
+Minh
+
+Then
+
+Text input
+
+Placeholder:
+
+Write what you remember about this moment...
+
+Rounded button
+
+Post Comment
+
+==================================================
+PHOTO NAVIGATION
+==================================================
+
+Left arrow
+
+Previous photo
+
+Right arrow
+
+Next photo
+
+Keyboard navigation
+
+Arrow keys
+
+ESC closes modal.
+
+==================================================
+FILTER
+==================================================
+
+Above the gallery,
+
+display simple filter chips.
+
+Examples:
+
+All
+
+Year 1
+
+Year 2
+
+Year 3
+
+Year 4
+
+Graduation
+
+The selected chip uses a pastel accent.
+
+==================================================
+LOAD MORE
+==================================================
+
+Initially display
+24 photos.
+
+As users scroll,
+
+automatically load more.
+
+Infinite scrolling.
+
+==================================================
+EMPTY STATE
+==================================================
+
+If there are no photos,
+
+display
+
+A camera illustration
+
+"No memories yet."
+
+==================================================
+ANIMATION
+==================================================
+
+Images fade upward
+while entering viewport.
+
+Hover:
+
+Lift
+
+Scale
+
+Click:
+
+Modal expands smoothly
+from the selected image.
+
+Modal closes
+back into its original position.
+
+==================================================
+RESPONSIVE
+==================================================
+
+Desktop:
+
+4–6 columns.
+
+Tablet:
+
+3 columns.
+
+Mobile:
+
+2 columns.
+
+Photo modal becomes
+full screen.
+
+==================================================
+EMOTIONAL GOAL
+==================================================
+
+Users should feel like
+they are rediscovering forgotten memories.
+
+The interface should disappear.
+
+Only the photographs
+and the stories attached to them
+should remain.

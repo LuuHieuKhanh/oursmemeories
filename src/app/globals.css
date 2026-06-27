@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-alt: var(--background-alt);
+  --color-card: var(--card);
+  
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-caption: var(--caption);
+  --color-divider: var(--divider);
+  
+  --color-baby-blue: var(--baby-blue);
+  --color-sky-blue: var(--sky-blue);
+  --color-mint: var(--mint);
+  --color-seafoam: var(--seafoam);
+  --color-lavender: var(--lavender);
+  --color-lilac: var(--lilac);
+  --color-butter: var(--butter);
+  --color-yellow: var(--yellow);
+  --color-pink: var(--pink);
+  --color-rose: var(--rose);
+  --color-peach: var(--peach);
+  --color-coral: var(--coral);
+  
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+  --font-handwriting: var(--font-patrick-hand);
+
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-6: 48px;
+  --spacing-8: 64px;
+  --spacing-12: 96px;
+  --spacing-16: 128px;
+}
+
+:root {
+  --background: #FFFDF9;
+  --background-secondary: #FAF7F2;
+  --background-alt: #F8FBFF;
+  --card: #FFFFFF;
+
+  --primary: #2D2D2D;
+  --secondary: #6E6E6E;
+  --caption: #9A9A9A;
+  --divider: #ECECEC;
+
+  --baby-blue: #D0E8F2;
+  --sky-blue: #A9D4E5;
+  --mint: #D4EAE0;
+  --seafoam: #B0D8C8;
+  --lavender: #E6E1F0;
+  --lilac: #CFC5E5;
+  --butter: #FDF4E3;
+  --yellow: #FBE6B3;
+  --pink: #F8E1E7;
+  --rose: #F2C4D3;
+  --peach: #FCECE4;
+  --coral: #F7CDB7;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: var(--font-sans);
+}
+
+/* Global scale down for desktop so the UI doesn't look enormous at 100% */
+@media (min-width: 768px) {
+  html {
+    zoom: 0.65;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    zoom: 0.7;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 0.75;
+  }
+}
