@@ -76,7 +76,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 10 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-[1400px] h-full md:h-[95vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
+            className="relative w-full max-w-[1400px] h-full md:h-[98vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
           >
             {/* Close Button Mobile */}
             <button 
@@ -121,14 +121,14 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                 <X size={24} strokeWidth={1.5} />
               </button>
 
-              <div className="flex-1 overflow-y-auto scrollbar-hide p-6 lg:p-10 pt-8 lg:pt-12">
+              <div className="flex-1 overflow-y-auto scrollbar-hide p-6 lg:p-10 pt-4 lg:pt-6">
                 {/* Header Info */}
-                <div className="mb-6 pb-6 border-b border-divider">
-                  <div className="inline-block px-3 py-1 rounded-full bg-background-secondary text-[10px] uppercase tracking-widest text-caption font-medium mb-3">
+                <div className="mb-4 pb-4 border-b border-divider">
+                  <div className="inline-block px-3 py-1 rounded-full bg-background-secondary text-[10px] uppercase tracking-widest text-caption font-medium mb-2">
                     {photo.category}
                   </div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-3 leading-tight">{photo.title}</h3>
-                  <p className="text-secondary/90 leading-relaxed mb-4">{photo.description}</p>
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-2 leading-tight">{photo.title}</h3>
+                  <p className="text-secondary/90 leading-relaxed mb-3">{photo.description}</p>
                   <div className="flex items-center gap-2 text-xs text-caption">
                     <span>Uploaded by <strong>{photo.uploader}</strong></span>
                     <span>•</span>
@@ -170,7 +170,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                    <select 
                       value={selectedUser}
                       onChange={(e) => setSelectedUser(e.target.value)}
-                      className="w-[90px] shrink-0 text-xs bg-background-secondary border border-divider rounded-full px-4 py-3.5 text-primary font-bold focus:outline-none focus:border-black/20 appearance-none text-center transition-colors"
+                      className="w-[110px] shrink-0 text-xs bg-background-secondary border border-divider rounded-full px-4 py-3.5 text-primary font-bold focus:outline-none focus:border-black/20 appearance-none text-center transition-colors"
                       style={{ backgroundImage: 'none' }}
                    >
                      {friends.map(f => (
@@ -178,22 +178,21 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                      ))}
                    </select>
                   
-                  <div className="relative flex-1 flex items-center">
-                    <input 
-                      type="text" 
-                      value={commentText}
-                      onChange={(e) => setCommentText(e.target.value)}
-                      placeholder="Write a comment..."
-                      className="w-full bg-background-secondary border border-divider rounded-full pl-5 pr-12 py-3.5 text-sm focus:outline-none focus:border-black/20 transition-colors"
-                    />
-                    <button 
-                        type="submit"
-                        disabled={isSubmitting || !commentText.trim()}
-                        className="absolute right-2 p-2 rounded-full bg-primary text-white hover:bg-black transition-colors shadow-sm disabled:opacity-50"
-                    >
-                       <Send size={16} />
-                    </button>
-                  </div>
+                   <input 
+                     type="text" 
+                     value={commentText}
+                     onChange={(e) => setCommentText(e.target.value)}
+                     placeholder="Write a comment..."
+                     className="flex-1 bg-background-secondary border border-divider rounded-full px-5 py-3.5 text-sm focus:outline-none focus:border-black/20 transition-colors"
+                   />
+                   
+                   <button 
+                       type="submit"
+                       disabled={isSubmitting || !commentText.trim()}
+                       className="shrink-0 p-3.5 rounded-full bg-primary text-white hover:bg-black transition-colors shadow-sm disabled:opacity-50 flex items-center justify-center"
+                   >
+                      <Send size={16} />
+                   </button>
                 </div>
               </form>
             </div>
