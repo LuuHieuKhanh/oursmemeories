@@ -86,8 +86,8 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               <X size={20} />
             </button>
 
-            {/* LEFT: PHOTO (70%) */}
-            <div className="w-full lg:w-[65%] xl:w-[70%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
+            {/* LEFT: PHOTO */}
+            <div className="w-full lg:w-[60%] xl:w-[65%] h-[40vh] lg:h-full bg-black flex items-center justify-center relative group">
               {photo.url ? (
                 <img src={photo.url} alt={photo.title} className="w-full h-full object-contain" />
               ) : (
@@ -112,8 +112,8 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               </button>
             </div>
 
-            {/* RIGHT: INFO & COMMENTS (30%) */}
-            <div className="w-full lg:w-[35%] xl:w-[30%] h-[60vh] lg:h-full bg-white flex flex-col overflow-hidden relative">
+            {/* RIGHT: INFO & COMMENTS */}
+            <div className="w-full lg:w-[40%] xl:w-[35%] h-[60vh] lg:h-full bg-white flex flex-col overflow-hidden relative">
               <button 
                 onClick={onClose}
                 className="hidden lg:flex absolute top-6 right-6 p-2 rounded-full text-caption hover:bg-black/5 transition-colors z-20"
@@ -165,26 +165,26 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               </div>
 
               {/* Comment Input */}
-              <form onSubmit={handleAddComment} className="p-6 lg:p-8 bg-white border-t border-divider shrink-0">
-                <div className="flex flex-col gap-4">
-                  <div className="flex gap-2">
-                     <select 
-                        value={selectedUser}
-                        onChange={(e) => setSelectedUser(e.target.value)}
-                        className="text-xs bg-background-secondary border border-divider rounded-[8px] px-3 py-2 text-primary font-medium focus:outline-none"
-                     >
-                       {friends.map(f => (
-                         <option key={f.id} value={f.name}>{f.name}</option>
-                       ))}
-                     </select>
-                  </div>
-                  <div className="relative flex items-center">
+              <form onSubmit={handleAddComment} className="p-4 lg:p-6 bg-white border-t border-divider shrink-0">
+                <div className="flex flex-row items-center gap-3">
+                   <select 
+                      value={selectedUser}
+                      onChange={(e) => setSelectedUser(e.target.value)}
+                      className="w-[90px] shrink-0 text-xs bg-background-secondary border border-divider rounded-full px-4 py-3.5 text-primary font-bold focus:outline-none focus:border-black/20 appearance-none text-center transition-colors"
+                      style={{ backgroundImage: 'none' }}
+                   >
+                     {friends.map(f => (
+                       <option key={f.id} value={f.name}>{f.name}</option>
+                     ))}
+                   </select>
+                  
+                  <div className="relative flex-1 flex items-center">
                     <input 
                       type="text" 
                       value={commentText}
                       onChange={(e) => setCommentText(e.target.value)}
-                      placeholder="Write what you remember..."
-                      className="w-full bg-background-secondary border border-divider rounded-full pl-5 pr-14 py-3.5 text-sm focus:outline-none focus:border-black/20 transition-colors"
+                      placeholder="Write a memory..."
+                      className="w-full bg-background-secondary border border-divider rounded-full pl-5 pr-12 py-3.5 text-sm focus:outline-none focus:border-black/20 transition-colors"
                     />
                     <button 
                         type="submit"
