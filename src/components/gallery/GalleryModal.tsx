@@ -76,7 +76,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 10 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-[1400px] h-full md:h-[98vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
+            className="relative w-[95vw] max-w-[1600px] h-full md:h-[98vh] bg-background flex flex-col lg:flex-row md:rounded-[24px] overflow-hidden z-10 shadow-2xl"
           >
             {/* Close Button Mobile */}
             <button 
