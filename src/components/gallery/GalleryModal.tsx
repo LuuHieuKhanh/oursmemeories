@@ -124,9 +124,6 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
               <div className="flex-1 overflow-y-auto scrollbar-hide p-6 lg:p-10 pt-4 lg:pt-6">
                 {/* Header Info */}
                 <div className="mb-4 pb-4 border-b border-divider">
-                  <div className="inline-block px-3 py-1 rounded-full bg-background-secondary text-[10px] uppercase tracking-widest text-caption font-medium mb-2">
-                    {photo.category}
-                  </div>
                   <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-2 leading-tight">{photo.title}</h3>
                   <p className="text-secondary/90 leading-relaxed mb-3">{photo.description}</p>
                   <div className="flex items-center gap-2 text-xs text-caption">
@@ -147,7 +144,7 @@ export function GalleryModal({ photoIndex, isOpen, onClose, onNavigate }: Props)
                     </div>
                   ) : (
                     photo.comments.map((comment) => (
-                      <div key={comment.id} className="bg-[#FAF7F2] px-4 py-3 rounded-[12px] border border-black/5 shadow-sm">
+                      <div key={comment.id} className="py-2 border-b border-divider/50 last:border-b-0">
                         <div className="flex items-center gap-2 mb-1">
                            <span className="font-bold text-primary text-xs">{comment.author}</span>
                            <span className="text-[10px] text-caption font-medium">•</span>
