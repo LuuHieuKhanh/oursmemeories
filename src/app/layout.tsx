@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Outfit, Inter, Patrick_Hand } from "next/font/google";
+import { Be_Vietnam_Pro, Literata, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
+const beVietnamPro = Be_Vietnam_Pro({
+  variable: "--font-be-vietnam-pro",
+  subsets: ["vietnamese", "latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin", "vietnamese"],
+const literata = Literata({
+  variable: "--font-literata",
+  subsets: ["vietnamese", "latin"],
+  style: ["italic", "normal"],
 });
 
 const patrickHand = Patrick_Hand({
@@ -30,8 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${outfit.variable} ${inter.variable} ${patrickHand.variable} antialiased h-full`}
+      lang="vi"
+      className={`${beVietnamPro.variable} ${literata.variable} ${patrickHand.variable} antialiased h-full`}
     >
       <body className="min-h-full flex flex-col font-sans bg-background text-primary selection:bg-mint/30">
         {children}
